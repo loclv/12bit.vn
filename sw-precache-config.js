@@ -1,7 +1,7 @@
 module.exports = {
-  root: 'public',
+  root: `${process.env.PUBLIC_DIR}`,
   staticFileGlobs: [
-    'public/**/*.*',
+    `${process.env.PUBLIC_DIR}/**/*.*`,
   ],
   runtimeCaching: [
     {
@@ -26,5 +26,5 @@ module.exports = {
     }
   ],
   navigateFallback: '/offline.html',
-  stripPrefix: 'public'
+  stripPrefix: `${process.env.PUBLIC_DIR}`
 }

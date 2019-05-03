@@ -10,6 +10,14 @@
 </div>
 <!-- #wrap -->
 {{ if ($.Page.Scratch.Get "include_search") "true" }}
+<script>
+  window.instantsearchConfig = {
+    appId: '{{ getenv "ALGOLIA_APP_ID" }}',
+    apiKey: '{{ getenv "ALGOLIA_SEARCH_KEY" }}',
+    indexName: '{{ getenv "ALGOLIA_INDEX_NAME" }}',
+    routing: true,
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4" defer></script>
 {{ $search := resources.Get "js/search.js"}}
 {{ $searchJs := $search | resources.Minify | resources.Fingerprint}}

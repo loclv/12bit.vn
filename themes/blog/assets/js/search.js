@@ -1,10 +1,7 @@
 
 // Algolia search
 const search = instantsearch({
-  appId: 'UG2807RQAR',
-  apiKey: '36c7036266cca7adce3103e7ac2e3fa6',
-  indexName: 'prod_12bit_blog',
-  routing: true,
+  ...window.instantsearchConfig,
   searchParameters: {
     hitsPerPage: 8
   },
@@ -36,7 +33,7 @@ const renderSearchBox = (renderOptions, isFirstRender) => {
     input.classList.add('ais-search-box--input')
 
     const label = document.createElement('label')
-    label.innerText = 'search'
+    label.innerText = 'Tim kiếm'
     label.setAttribute('for', input.id)
     input.addEventListener('input', event => {
       refine(event.target.value);

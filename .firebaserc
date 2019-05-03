@@ -1,5 +1,17 @@
 {
   "projects": {
     "production": "twelve-bit"
-  }
+  },
+    "targets": {
+      "twelve-bit": {
+        "hosting": {
+          "blog": [
+            "twelve-bit"
+          ],
+          "til": [
+            "til-12bit"
+          ]
+        }
+      }
+    }
 }
