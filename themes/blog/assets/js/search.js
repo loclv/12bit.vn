@@ -33,7 +33,7 @@ const renderSearchBox = (renderOptions, isFirstRender) => {
     input.classList.add('ais-search-box--input')
 
     const label = document.createElement('label')
-    label.innerText = 'Tim kiếm'
+    label.innerText = 'Tìm kiếm'
     label.setAttribute('for', input.id)
     input.addEventListener('input', event => {
       refine(event.target.value);

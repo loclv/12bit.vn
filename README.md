@@ -48,3 +48,11 @@ Tất cả hình ảnh cho bài viết các bạn có thể đặt trong `conten
 Hình đại diện này được sử dụng cho việc hiển thị bài viết được share trên mạng xã hội. Nếu bạn tự thiết kế được thì quá tốt, nếu không thì có thể dùng tool [social-image-gen](https://github.com/12bitvn/social-image-gen) để tự generate ra hình dựa theo nội dung bài viết, ví dụ như hình bên dưới tụi mình đã dùng tool để tự tạo.
 
 ![thumbnail](https://user-images.githubusercontent.com/3280351/56181308-1c8d4980-6037-11e9-959b-fa59e91aaba6.png)
+
+## Deploy
+
+Hãy đảm bảo là bạn đã tạo file .env để export đầy các env variable cần thiết.
+
+```
+make deploy env=blog
+```
