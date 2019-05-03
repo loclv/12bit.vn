@@ -1,7 +1,7 @@
 module.exports = {
-  root: `${process.env.PUBLIC_DIR}`,
+  root: `${process.env.HUGO_PUBLISHDIR}`,
   staticFileGlobs: [
-    `${process.env.PUBLIC_DIR}/**/*.*`,
+    `${process.env.HUGO_PUBLISHDIR}/**/*.*`,
   ],
   runtimeCaching: [
     {
@@ -26,5 +26,5 @@ module.exports = {
     }
   ],
   navigateFallback: '/offline.html',
-  stripPrefix: `${process.env.PUBLIC_DIR}`
+  stripPrefix: `${process.env.HUGO_PUBLISHDIR}`
 }

@@ -1,7 +1,6 @@
 <header>
   <h1 class="article__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
   <div class="article__meta">
-      <time class="article__date">{{ .Date.Format "02-01-2006" }}</time>{{with .Author}} /
-      <a href="{{ .Social.website }}" target="_blank" rel="noopener" class="sub-color">{{ .DisplayName }}</a>{{end}}
+      <time class="article__date">{{ .Date.Format "02-01-2006" }}</time> / <span class="sub-color">{{ .Author.DisplayName }}</span>
   </div>
 </header>

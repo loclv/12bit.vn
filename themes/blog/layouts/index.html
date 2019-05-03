@@ -3,7 +3,7 @@
 <main id="content" class="site-content index list">
   <div>
     {{ range .Paginator.Pages }}
-    {{ partial "article/list-item" . }}
+      {{ partial "article/list-item" . }}
     {{ end }}
   </div>
 {{ template "_internal/pagination.html" . }}
